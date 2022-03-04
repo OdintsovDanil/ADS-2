@@ -39,10 +39,10 @@ double expn(double x, uint16_t count) {
 
 double sinn(double x, uint16_t count) {
 	double osnov = x;
-	for (uint16_t i = 3; i < 2*count - 1; i += 4) {
+	for (uint16_t i = 3; i < 2 * count - 1; i += 4) {
 		osnov -= calcItem(x, i);
 	}
-	for (uint16_t i = 5; i < 2*count - 1; i += 4) {
+	for (uint16_t i = 5; i < 2 * count - 1; i += 4) {
 		osnov += calcItem(x, i);
 	}
 	return osnov;
